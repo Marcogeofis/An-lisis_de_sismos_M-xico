@@ -1,37 +1,102 @@
+import Header from './heades/header';
+import Article from './article/article';
+import Article2 from './PageData/pageData';
+import Dashboard from './imgDashboards/imgDashboard';
+import ImgGeo from './imgGeologicos/imgGeo';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1>
-          Análisis sismico de México
-        </h1>
-      </header>
-      <section>
-        <article>
-          <h4>
-            ¿Qué es un sismo o temblor?
-          </h4>
-          <p>Experimentamos una leve vibración en el suelo cuando un camión pesado pasa cerca de nuestra ubicación. Aunque esta perturbación en el suelo es percibida como una vibración ligera, solemos denominarla temblor o sismo cuando la sensación es más intensa y prolongada. Sin embargo, es importante destacar que un temblor no es causado por el paso de un camión pesado. ¿Entonces, cuál es la causa de un temblor?</p>
-          <p>Los sismos son ocasionados por el movimiento de las placas tectónicas, que constituyen la parte de la superficie de nuestro planeta en la que habitamos. Estas placas se encuentran sometidas a fuerzas considerables en los límites donde entran en contacto. En estas zonas de contacto, se manifiestan diversos procesos geológicos, tales como <a href='https://es.wikipedia.org/wiki/Borde_convergente'>divergencia</a>, <a href='https://es.wikipedia.org/wiki/Borde_divergente'>convergencia</a> y <a href='https://es.wikipedia.org/wiki/Subducci%C3%B3n'>subducción</a>.</p>
-          <p>Los fenómenos de subducción y desplazamiento lateral son responsables de la actividad sísmica, ya que se manifiestan en las placas Norteamericana, Cocos, Rivera y del Pacífico, situadas en las proximidades de México. Como resultado, el país se ubica en una región conocida como el Cinturón de Fuego, caracterizada por una elevada incidencia de movimientos sísmicos.</p>
-        </article>
-        
-        <article>
-          <h4>
-            Obtención de los datos
-          </h4>
-          <p>Los datos se obtubieron de la página del Servicio Sismológico Nacional http://www.ssn.unam.mx/sismicidad/ultimos/.</p>
-          <p>El periodo que se tomó para el análisis de sismos en México fue de 2011 a 2021. Se le realizó una limpieza y los ajustes necesarios.
-          </p>
-        </article>
-        <article>
-          <h4>
-            Dashboards de los sismos por Estado.
-          </h4>
-          <p>dashboards</p>
-        </article>
+      <Header />
+      <section className='container__intro'>
+        <Article 
+          title='¿Qué es un sismo o temblor?'
+        />
+        <section className='container__imgGeo'>
+          <ImgGeo 
+            title='Convergencia - imágen tomada de wikipedia'
+            img='https://i.imgur.com/06MGOO4.png'
+          />
+          <ImgGeo 
+            title='Subdución - imágen tomada de wikipedia'
+            img='https://i.imgur.com/wT2DC6Q.png'
+          />
+          <ImgGeo 
+            title='Divergencia - imágen tomada de wikipedia'
+            img='https://i.imgur.com/sI5jU8Y.png'
+          />
+          <ImgGeo 
+            title='Desplazamiento lateral - imágen tomada de wikipedia'
+            img='https://i.imgur.com/LHEbVb5.png'
+          />
+          <ImgGeo 
+            title='Cinturón de fuego - imágen tomada de wikipedia'
+            img='https://i.imgur.com/TLDpOZf.png'
+          />
+        </section>
+        <Article2
+          title='Obtención de los datos'
+        />
+      </section>
+      <section className='container__section--dashboard'>
+        <h4 className='section__title--dashboard'>Dashboards de los sismos por Estado.</h4>
+        <section className='container__imgDash'>
+          <Dashboard 
+            img='https://i.imgur.com/jMyFbUo.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/yWiagSG.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/8UqC09b.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/NROIWfh.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/hVEramq.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/igqhfIw.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/ZVzGdLz.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/Jdgcrwc.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/SOQkATS.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/ebRz9SB.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/hKuhaMG.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/GM0M9Hr.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/9jzlB66.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/uRJHHFC.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/OCJJ4HS.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/bd1GB7x.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/r07UGDh.png'
+          />
+          <Dashboard 
+            img='https://i.imgur.com/JsNbv8b.png'
+          />
+        </section>
       </section>
     </div>
   );

@@ -1,0 +1,34 @@
+.container__article{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.article_title{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #EA906C;
+    opacity: 0.6;
+    padding: 0 8px;
+    margin-bottom: 20px;
+}
+.article_text{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 8px;
+    margin: 10px 0;
+    color: #EEE2DE;
+    margin-bottom: 20px;
+}
+.article_link{
+    text-decoration: none;
+    color: #EA906C;
+    opacity: 0.8;
+}
+@media screen and (min-width:762px) {
+    
+}

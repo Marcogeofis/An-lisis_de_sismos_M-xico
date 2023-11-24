@@ -1,0 +1,33 @@
+.container__dataInformation{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.dataInformation__title{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    color: #EA906C;
+    opacity: 0.6;
+    padding: 0 8px;
+    margin-bottom: 20px;
+}
+.dataInformation__text{
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0 8px;
+    margin-bottom: 20px;
+    color: #EEE2DE;
+}
+.pageData_link{
+    color: #EA906C;
+    opacity: 0.8;
+}
+@media screen and (min-width:762px) {
+    .dataInformation__text{
+        width: 100%;
+    }
+}

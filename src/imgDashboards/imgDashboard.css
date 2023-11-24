@@ -1,0 +1,39 @@
+.container__img--dashboard{
+    width: 320px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+.img--dashboard__title{
+    font-size: 1rem;
+}
+.img--dashboard__figure{
+    width: 100%;
+    height: auto;
+}
+.img--dashboard{
+    width: 300px;
+    height: 250px;
+}
+@media screen and (min-width:762px) {
+    .container__img--dashboard{
+        width: auto;
+        margin: 10px 10px;
+    }
+    .img--dashboard{
+        width: 650px;
+        height: 500px;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container__img--dashboard{
+        margin: 30px 0;
+    }
+    .img--dashboard{
+        width: 800px;
+        height: 500px;
+    }
+}
